@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- viewport é a area visivel da pagina, ou seja, como a pagina sera exibida a tela do dispositivo (celular, tablet e monitor)-->
+    <!--width=device-width significa a largura da pagina sera igual (se adapta) à largura da tela do dispositivo-->
+    <!--initial-scale=1.0 define o nivel de zoom inicial quando a página é carregada:
+    1.0 = sem zomm (tamanho normal)
+    2.0 = zoom 2x (dobro do normal)
+    0.5 = zoom reduzido (metade do tamanho normal)-->
+    <!-- A tag meta abaixo evita que a página fique minusculo no celular. Evita que o usuario de zoom manual, Evita que o Layout quebre -->
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo_padrao.css" type="text/css">
+    <title>Web responsivo</title>
+
+    <!-- MEDIA QUERIES-->
+
+    <!-- Resolução para dispositivos móveis -->
+    <link rel="stylesheet" media="screen and (max-width:480px)" href="css/estilo_celular.css">
+
+    <!-- Resolução para dispositivos tablets -->
+    <link rel="stylesheet" media="screen and (min-width:481px) and (max-width:768px)" href="css/estilo_tablet.css">
+
+    <!-- Resolução para monitor HD (1K) 1024 largura X 768 altura -->
+    <link rel="stylesheet" media="screen and (min-width:769px) and (max-width:1024px)" href="css/estilo_hd.css">
+
+    <!-- Resolução para monitor Full HD (1K) 1920 largura X 1080 altura em diante-->
+    <link rel="stylesheet" media="screen and (min-width:1025px)" href="css/estilo_fullhd.css">
+
+</head>
+
+<body>
+    <header>
+        <h1 id="titulo">Web Design Responsivo</h1>
+    </header>
+
+    <section id="caixa_grid">
+        <section id="celula1">1</section>
+        <section id="celula2">2</section>
+        <section id="celula3">3</section>
+        <section id="celula4">4</section>
+        <section id="celula5">5</section>
+        <section id="celula6">6</section>
+        <section id="celula7">7</section>
+        <section id="celula8">8</section>
+        <section id="celula9">9</section>
+        <section id="celula10">10</section>
+    </section>
+
+    <section id="paragrafo"></section>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

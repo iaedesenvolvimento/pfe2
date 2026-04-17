@@ -1,0 +1,50 @@
+#container {
+    background-color: #ca9a6a;
+    width: 45%; /* quase a metade da largura do navegador */
+    margin: auto;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 5px 8px #505050;
+    /*
+        5 pixels de sombra na horizontal inferior
+        5 pixels de sombra na vertical lateral direita
+        8 pixels de efeito borrão da borda
+        cor da sombra cinza escuro
+    */
+}
+
+#container:hover {
+    box-shadow: 10px 10px 15px #505050;
+    /*
+        10 pixels de sombra na horizontal inferior
+        10 pixels de sombra na vertical lateral direita
+        15 pixels de efeito borrão da borda
+        cor da sombra cinza escuro
+    */
+}
+
+#titulo {
+    font-family: "Comic Sans MS";
+    text-align: center;
+    font-size: 22px;
+    text-shadow: 2px 2px 4px #505050; /* A propriedade text-shadow é utilizada para adicionar sombras a textos */
+    /*
+        2 pixels de sombreamento na horizontal
+        2 pixels de sombreamento na vertical
+        4 pixels de efeito borrão
+        cor do sombreamento cinza escuro
+    */
+}
+
+p, #lista {
+    font-family: Verdana;
+    font-size: 16px;
+    text-align: justify;
+    font-weight: bold;
+    color: #fff;
+}
+
+#lista {
+    list-style-type: circle;     /* define o tipo de marcador da lista, (circle circulo somente o contorno, disq é um circulo preenchido e square é um quadrado preenchido) */
+    line-height: 2;   /* define o espaçamento dos itens da lista, ou seja, quanto maior o valor, maior o espaçamento*/
+}

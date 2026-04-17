@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Responsivo</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdf2e9;
+            padding: 20px;
+        }
+
+        /* Container Principal */
+        .grid-container {
+            display: grid;
+            gap: 15px;
+            /* No Mobile: 1 coluna única */
+            grid-template-columns: 1fr;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Definição das Cores e Blocos */
+        .azul { background-color: #00bfff; height: 60px; }
+        .laranja-topo { background-color: #ffa54f; height: 60px; }
+        
+        .principal {
+            background-color: #ff7f50;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .amarelo { background-color: #ffd700; height: 120px; }
+        .rosa { background-color: #ffb6c1; height: 80px; }
+
+        /* --- REGRAS DE RESPONSIVIDADE --- */
+
+        /* Tablet (Telas acima de 600px) */
+        @media (min-width: 600px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+            }
+            .azul { grid-column: 1 / 2; }
+            .laranja-topo { grid-column: 2 / 3; }
+            .principal { grid-column: 1 / 3; } /* Ocupa as 2 colunas */
+            .rosa { grid-column: 1 / 3; }
+        }
+
+        /* Desktop (Telas acima de 900px) */
+        @media (min-width: 900px) {
+            .grid-container {
+                grid-template-columns: 1fr 2fr; /* Coluna azul menor que a laranja */
+            }
+            /* Ajustando o layout para 3 colunas na parte de baixo */
+            .area-inferior {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 15px;
+                grid-column: 1 / 3;
+            }
+            .principal { grid-column: 1 / 3; height: 250px; font-size: 3rem; }
+            .rosa { display: none; } /* Na imagem desktop não aparece o rodapé rosa */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="azul"></div>
+        <div class="laranja-topo"></div>
+        
+        <div class="principal">DESIGN RESPONSIVO</div>
+
+        <!-- No desktop, estes 3 ficam lado a lado -->
+        <div class="amarelo"></div>
+        <div class="amarelo"></div>
+        <div class="amarelo"></div>
+
+        <div class="rosa"></div>
+    </div>
+
+</body>
+</html>

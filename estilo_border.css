@@ -1,0 +1,36 @@
+#caixa1{
+    width: 30%;
+    margin:auto;
+    border: 2px solid #ff0000; /* Taqgrafia ou Pseudocodigo */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#caixa1:hover{
+    background-color: #178596;
+      /* Transição suave para o efeito de crescimento (0.3s) */
+    transform: scale(1.1);
+    border-width: 2px;
+
+}
+
+#caixa2{
+    width: 30%;
+    margin:auto;
+    border: 2px solid #178596; /* Taqgrafia ou Pseudocodigo */
+    padding: 10px;
+    border-radius: 50px 20px;
+    margin-top: 20px;
+}
+
+#titulo {
+    font-family: "Comic Sans MS";
+    font-size: 1.5em;
+    text-align: center;
+}
+
+p{
+    font-family: arial;
+    font-size: 1em; 
+}
+

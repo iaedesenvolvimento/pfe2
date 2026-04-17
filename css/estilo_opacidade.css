@@ -1,0 +1,41 @@
+body {
+    margin: 0;  /* Nao tera margin na página*/
+}
+
+#titulo {
+    text-align: center;
+    font-family: "Comic Sans MS";
+    font-size: 2em;    /* Equivale a 32 pixels ou 200% zoom do navegador*/
+}
+
+#container {
+    margin: auto;
+    width: 70%;
+    border: 0px solid #ff0000;
+    display: grid;  /* Constrói uma tabela, ou seja, juncao de linha(s) e colunas(s)*/
+    grid-template-columns: 1fr 1fr ;   /* Fracao para duas colunas*/  /* 1fr= uma fracao do espaco total disponivel na largura do navegador*/
+    gap: 30px;     /*Distancia entre as colunas */
+}
+
+.coluna figure {   /*Tag figure é como se fosse o container ou a caixa da imagem*/
+    margin: 0; /* Remove as margens padrão do navegador para o figure */
+    width: 100%;
+}
+
+.coluna {
+    border: 0px solid #18099c;
+}
+
+.coluna img {
+    opacity: 0.7;     /* A imagem fica 60% opaco*/
+    transition: 0.4;  /* Transicao de 4 segundos quando passa o mouse sobre a imagem e a imagem aumenta na escala de 5% */ 
+    width: 100%;    /* Força a imagem a ter a largura do pai (figure) */
+    border-radius: 10px;     /* 10 px do Arredondamento dos cantos da imagem */ 
+       
+}
+
+.coluna img:hover {
+    opacity: 1;    /* Volta ao normal ao passar o mouse por cima da imagem*/
+    cursor: pointer;
+    transform: scale(1.05);   /*  a imagem aumenta na escala de 5% */
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!--
+        viewport: É a tela visual do dispositivo (monitor, celular e tablet)
+        content="width=device-width: E a largura da tela visual do dispositivo
+        initial-scale=1.0: é o padrao da escala (tamanho da pagina zoom 100%)
+        OBS: A tag meta da linha 12 se refere a paginas responsivas, ou seja,
+        adequada para ajustar em telas de monitor, celular e tablet.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela com Css Grid - Dias da Semana</title>
+    <link rel="stylesheet" href="estilo_semana.css" type="text/css">
+
+</head>
+<body>
+
+    <header> <!--Tag header é o cabeçalho principal da pagina-->
+        <h1>Exemplo de Estrutura Semântica com CSS Grid</h1>
+    </header>
+    
+    <main>  <!--Tag main é o Conteudo principal da pagina-->
+        <section id="tabela_container">
+            <header>
+                <h2>Dias da Semana</h2>
+            </header>
+        </section>
+
+        <section id="tabela_grid">
+            <section class="coluna">Domingo</section>
+            <section class="coluna">Segunda-Feira</section>
+            <section class="coluna">Terça-Feira</section>
+            <section class="coluna">Quarta-Feira</section>
+            <section class="coluna">Quinta-Feira</section>
+            <section class="coluna">Sexta-Feira</section>
+            <section class="coluna">Sábado</section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Exemplo HTML 5.2 com CSS Grid</p>
+    </footer>
+</body>
+</html>

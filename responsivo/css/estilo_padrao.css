@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#titulo{
+    text-align: center;
+    font-family: "Comic Sans MS";
+    color: #00bfff;
+    font-weight: bold;
+}
+
+#caixa_grid {
+    display: grid;  /* Cria uma grade, ou seja, uma tabela */
+    width: 75%;     /* 75% de largura em relacao a largura da tela do dispositivo*/
+    margin: auto;   /* Centralizar horizontalmente a grade / tabela */
+    background-color: red;
+    border-radius: 15px
+}
+
+#caixa_grid > section {
+    text-align: center;
+    font-family: arial;
+    color: #fff;
+    font-weight: bold;
+}
+
+#paragrafo {
+    margin: auto;
+    width: 75%;
+    text-align: center;
+    font-family: arial
+}

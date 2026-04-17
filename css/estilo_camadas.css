@@ -1,0 +1,66 @@
+#titulo {
+    font-family: "Comic sans ms";
+    font-size: 2em;
+    color: #437885;
+    text-align: center;
+}
+
+#quadrado_verde,
+#quadrado_azul,
+#quadrado_vermelho,
+#quadrado_rosa,
+#quadrado_laranja,
+#quadrado_roxo {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    opacity: 0.8;
+}
+
+#quadrado_verde {
+    background-color: #2fff89;
+    top: 100px;
+    left: 100px;
+    z-index: 0;
+    border-top-left-radius: 15px;
+}
+
+#quadrado_azul {
+    background-color: blue;
+    top: 120px;
+    left: 140px;
+    z-index: 1;
+}
+
+#quadrado_vermelho {
+    background-color: red;
+    top: 140px;
+    left: 180px;
+    z-index: 2;
+    border-bottom-right-radius: 15px;
+}
+
+#quadrado_rosa {
+    background-color: pink;
+    top: 100px;
+    left: 45%;
+    z-index: 0;
+    border-top-left-radius: 15px;
+}
+
+#quadrado_laranja {
+    background-color: orange;
+    top: 120px;
+    left: 47%;
+    z-index: 1;
+
+}
+
+#quadrado_roxo {
+    background-color: #960465;
+    top: 140px;
+    left: 49%;
+    z-index: 2;
+    border-bottom-right-radius: 15px;
+
+}

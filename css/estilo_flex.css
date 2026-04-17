@@ -1,0 +1,54 @@
+body {
+    background-color: #f5f5f5;
+    align-items: center;
+    height: 100vh;
+    /* Define a altura de um elemento (neste caso o body), como 100% da altura de tela visível (viewport height) */
+}
+
+#titulo {
+    font-family: Arial;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section {
+    margin: auto;
+    /* Centraliza o container section na página do navegador */
+    display: flex;
+    /* Transforma o elemento (section) em um container flexível, permitindo organizar os elementos filhos (tags dentro de section) de forma mais fácil e dinâmico */
+
+    justify-content: center;
+    /* Faz parte do css flex e serve para alinhar os itens no eixo principal, podendo ser eixo horizontal ou vertical (horizontal é o padrão). Neste caso, centraliza os itens horizontalmente dentro do container. */
+
+    flex-wrap: wrap;
+    /* É uma propriedade do flex que controla se os elementos filhos (as tags que pertence ao container section) devem quebrar para a próxima linha ou ficar todos em uma unica linha */
+
+    width: 600px;
+    /*Largura do container section */
+    gap: 10px;
+    /* Define um espaço de 10 pixels entre os itens dentro do container section */
+
+    
+}
+
+img {
+    width: calc(33.33% - 10px);
+    /* utiliza a função calc() do CSS para fazer o cálculo automático de tamanho, 
+    que neste caso é a largura, misturando porcentagem (%) com pixels (px). 
+    Na linha de código CSS, isso significa 33.33% -> ocupa 1/3 da largura do 
+    container (section), subtraindo 10 pixels 
+    */
+    
+
+    height: 150px;
+    object-fit: cover;
+    /* object-fit é utilizado principalmente em vídeos e imagens, e serve para controlar como o 
+    conteúdo se ajusta dentro do tamanho definido
+    cover: preenche todo o espaço, mantém a proporção original e pode cortar partes da imagem.
+    Resumindo: com o cover a imagem não deforma e fica mais bonita.
+    fill: não preserva a proporção da imagem, e ela é redimensionada para preencher o container (a imagem será esticada ou comprimida para se ajustar).
+    Resumindo: fill mostra a imagem toda, esticando ou comprimindo. */
+
+    border-radius: 8px;
+}
