@@ -17,7 +17,7 @@
             <fieldset>
                 <legend>Dados Pessoais</legend>
 
-                <label>
+                <label for="pessoa" class="linha">
                     <input type="radio" name="pessoa" id="pessoaid" value="fisica" required>Pessoa Física&nbsp;&nbsp;
                     <input type="radio" name="pessoa" id="pessoaid" value="juridica" required>Pessoa Jurídica
                 </label>
@@ -26,30 +26,30 @@
                 <section id="novoCampo"></section>
 
                 <!--NOME DO USUÁRIO-->
-                <label for="nome">Nome
+                <label for="nome" class="linha">Nome
                     <input type="text" name="nome" id="nomeid" class="caixa_texto" placeholder="Nome Completo" required>
                 </label>
 
                 <!--EMAIL DO USUÁRIO-->
-                <label for="nome">Email
+                <label for="email" class="linha">Email
                     <input type="text" name="email" id="emaiid" class="caixa_texto" placeholder="name@email.com"
                         required>
                 </label>
 
                 <!--LOGRADOURO DO USUÁRIO-->
-                <label for="nome">Endereço
+                <label for="endereco" class="linha">Endereço
                     <input type="text" name="endereco" id="enderecoid" class="caixa_texto" placeholder="Rua/Av./Alameda"
                         required>
                 </label>
 
                 <!--BAIRRO DO USUÁRIO-->
-                <label for="nome">Bairro
+                <label for="bairro" class="linha">Bairro
                     <input type="text" name="bairro" id="bairroid" class="caixa_texto" placeholder="Pq/Jd/Vila"
                         required>
                 </label>
 
                 <!--CIDADE DO USUÁRIO-->
-                <label for="nome">Cidade
+                <label for="cidade" class="linha">Cidade
                     <input type="text" name="cidade" id="cidadeid" class="caixa_texto" required>&nbsp;&nbsp;
                     <select name="UF" id="UFid">
                         <option value="AC">AC</option>
