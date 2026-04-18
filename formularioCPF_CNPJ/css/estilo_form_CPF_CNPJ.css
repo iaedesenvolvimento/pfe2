@@ -12,6 +12,41 @@
     font-size: 1.5em;
 }
 
+.linha {
+    display: block;
+    margin-bottom: 15px;
+    
+}
+
+#container_formulario label > span {
+    width: 80px;
+    font-weight: bold;
+    float: left;
+    padding-top: 8px;
+    padding-right: 5px;
+}
+
+#CEP{
+    width: auto;;
+}
+
+#container_formulario input[type=text] {
+    width: 75%;
+}
+
+#container_formulario input[type=email] {
+    width: 75%;
+}
+
+#cepid {
+    width: 20%;
+}
+
+#cidadeid {
+    
+
+}
+
 #container_formulario input[type=submit], #container_formulario input[type=reset] {
     border: none;
     padding: 8px 15px 8px 15px;

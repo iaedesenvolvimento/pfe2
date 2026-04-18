@@ -26,30 +26,30 @@
                 <section id="novoCampo"></section>
 
                 <!--NOME DO USUÁRIO-->
-                <label for="nome" class="linha">Nome
+                <label for="nome" class="linha"><span>Nome</span>
                     <input type="text" name="nome" id="nomeid" class="caixa_texto" placeholder="Nome Completo" required>
                 </label>
 
                 <!--EMAIL DO USUÁRIO-->
-                <label for="email" class="linha">Email
-                    <input type="text" name="email" id="emaiid" class="caixa_texto" placeholder="name@email.com"
+                <label for="email" class="linha"><span>Email</span>
+                    <input type="email" name="email" id="emaiid" class="caixa_texto" placeholder="name@email.com"
                         required>
                 </label>
 
                 <!--LOGRADOURO DO USUÁRIO-->
-                <label for="endereco" class="linha">Endereço
+                <label for="endereco" class="linha"><span>Endereço</span>
                     <input type="text" name="endereco" id="enderecoid" class="caixa_texto" placeholder="Rua/Av./Alameda"
                         required>
                 </label>
 
                 <!--BAIRRO DO USUÁRIO-->
-                <label for="bairro" class="linha">Bairro
+                <label for="bairro" class="linha"><span>Bairro</span>
                     <input type="text" name="bairro" id="bairroid" class="caixa_texto" placeholder="Pq/Jd/Vila"
                         required>
                 </label>
 
                 <!--CIDADE DO USUÁRIO-->
-                <label for="cidade" class="linha">Cidade
+                <label for="cidade" class="linha"><span>Cidade</span>
                     <input type="text" name="cidade" id="cidadeid" class="caixa_texto" required>&nbsp;&nbsp;
                     <select name="UF" id="UFid">
                         <option value="AC">AC</option>
@@ -79,7 +79,7 @@
                         <option value="SP" selected>SP</option>
                         <option value="TO">TO</option>
                     </select>
-                <label for="CEP">CEP</label>
+                <span id="CEP">CEP</span></label>
                 <input type="text" name="cep" id="cepid" class="caixa_texto" placeholder="xxxxx-xxx" pattern="[0-9]{8}" required maxlength="8">
              </label>
             </fieldset>
