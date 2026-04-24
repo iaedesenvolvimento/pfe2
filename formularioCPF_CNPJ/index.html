@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
     <link rel="stylesheet" href="css/estilo_form_CPF_CNPJ.css" type="text/css">
+    <script src="js/jquery-3.6.0min.js"></script>
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
     <header>
         <h1 id="titulo">Formulário Contato</h1>
     </header>
-    <section id="container_formulario">
+    <section class="container_formulario">
         <form action="">
             <fieldset>
                 <legend>Dados Pessoais</legend>
@@ -25,7 +27,7 @@
                 <!--NOVO CAMPO (CPF OU CNPJ)-->
                 <section id="novoCampo"></section>
 
-                <!--NOME DO USUÁRIO-->
+                <!--NOME DO USUÁRIO-->  
                 <label for="nome" class="linha"><span>Nome</span>
                     <input type="text" name="nome" id="nomeid" class="caixa_texto" placeholder="Nome Completo" required>
                 </label>
@@ -79,9 +81,9 @@
                         <option value="SP" selected>SP</option>
                         <option value="TO">TO</option>
                     </select>
-                <span id="CEP">CEP</span></label>
+                <span id="CEP">CEP</span>
                 <input type="text" name="cep" id="cepid" class="caixa_texto" placeholder="xxxxx-xxx" pattern="[0-9]{8}" required maxlength="8">
-             </label>
+            </label>
             </fieldset>
 
             <p>

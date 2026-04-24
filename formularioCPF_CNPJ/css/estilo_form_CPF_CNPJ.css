@@ -1,4 +1,4 @@
-#container_formulario {
+.container_formulario {
     max-width: 500px;
     padding: 20px 12px 10px 20px;
     margin: auto;
@@ -18,7 +18,7 @@
     
 }
 
-#container_formulario label > span {
+.container_formulario label > span {
     width: 80px;
     font-weight: bold;
     float: left;
@@ -27,14 +27,14 @@
 }
 
 #CEP{
-    width: auto;;
+    float: none;
 }
 
-#container_formulario input[type=text] {
+.container_formulario input[type=text] {
     width: 75%;
 }
 
-#container_formulario input[type=email] {
+.container_formulario input[type=email] {
     width: 75%;
 }
 
@@ -43,11 +43,11 @@
 }
 
 #cidadeid {
-    
-
+    width: 30%;
 }
 
-#container_formulario input[type=submit], #container_formulario input[type=reset] {
+.container_formulario input[type=submit], 
+.container_formulario input[type=reset] {
     border: none;
     padding: 8px 15px 8px 15px;
     background: #ff8500;
@@ -56,7 +56,7 @@
     cursor: pointer;
 }
 
-#container_formulario input[type=submit]:hover, #container_formulario input[type=reset]:hover{
-    background: #ea7b00;
+.container_formulario input[type=reset]:hover, 
+.container_formulario input[type=submit]:hover {
     color: #fff;
 }
