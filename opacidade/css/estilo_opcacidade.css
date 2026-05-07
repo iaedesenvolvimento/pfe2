@@ -1,0 +1,60 @@
+body {
+    display: flex;      /* Faz com que o corpo da página seja um container flexível. Isso permite alinhar e
+                           organizar os elementos filhos (tags que pertencem ao body) com mais facilidade */
+    justify-content: center; /* centraliza os elementos horizontalmente */
+    height: 100vh;      /* Define a altura do corpo da página (body) como 100% da altura da tela (viewport height) */
+    background-color: #f4f4f4;
+    align-items: center;
+}
+
+figure {  /* tag figure é utilizado para aplicar estilos definidos dentro de seu bloco */
+    position: relative;    /* define o posicionamento como relativo */
+    width: 500px;          /* define a largura fixa do elemento como 300 pixels */
+    overflow: hidden;      /* Esconde qualquer conteúdo, que neste caso é a imagem,
+                              que ultrapasse os limites do <figure> */
+    margin: 0;             /* Remove qualquer margem externa do <figure>.
+                              Isso garante que o <figure> não tenha espaçamento ao seu redor. */
+    border-radius: 10px;   /* Arredonda os cantos do <figure> com raio de 10 pixels. */
+}
+
+figure img {
+    width: 100%;           /* A imagem vai ocupar 100% de largura do elemento pai (que é a tag figure) */
+    display: block;        /* por padrao a tag img é inline, ou seja, uma ao lado da outra. Aqui está sendo transformada em bloco */
+    transition: opacity 0.5s ease;
+    /*
+        CSS transition é sinônimo de animação de um objeto, que neste caso é a imagem. Uma propriedade que será animada,
+        é a transparência (opacity). A duração desta animação é de meio segundo (0.5s).
+        ease é um tipo de suavização, que começa devagar, acelera e no final do tempo de animação, desacelera.
+    */
+}
+
+figure:hover img {
+    opacity: 0.3;          /* efeito de transparência ao passar o mouse sobre a imagem */
+}
+
+figure:hover figcaption {
+    opacity: 1;            /* A frase aparece totalmente visivel quando o usuario sobrepoe o mouse sobre a imagem */
+}
+
+figcaption {
+    position: absolute;        /*
+                                  Define o posicionamento do elemento como absoluto. Isso permite posicionar o figcaption
+                                  livremente dentro do elemento pai (tag figure)
+                               */
+    top: 50%;                  /* Move o elemento 50% para a baixo em relação ao topo do elemento pai (tag figure) */
+    left: 50%;                 /* Move o elemento 50% para a direita em relação à esquerda do elemento pai (tag figure) */
+    transform: translate(-50%, -50%);
+                               /*
+                                  -50% no eixo X: puxa para a esquerda metade da largura do próprio elemento
+                                  -50% no eixo Y: puxa para a cima metade da altura
+                                  OBS: A ideia é deixar o figcaption centralizado(horizontal e verticalmente)
+                               */
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0;                /* A frase aparece totalmente invisível (totalmente transparente) */
+    transition: opacity 0.5s ease;
+    width: 92%;
+    text-align: center;
+    font-family: arial;
+}
+
