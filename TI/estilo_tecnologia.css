@@ -1,0 +1,64 @@
+body {
+    font-family: arial;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #0d6edf;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex; /* 
+    transforma a tag main em um container flexível. Isso faz com que os elementos filhos (tags dentro de main),
+    fiquem organizados de forma mais prática, normalmente lado a lado.
+    */
+    
+    gap: 20px; /* 
+    Define o espaçamento entre os elementos internos do flexbox, onde que nesse caso haverá
+    um espaço de 20 pixels entre as tags filhas direto do main: section e aside
+    [ section ] 20px [ aside ]
+    */
+
+    padding: 20px; /* Espaçamento interno dentro da tag main */
+}
+
+section {
+    flex: 3; /* 
+    Define o tamanho proporcional do elemento dentro do Flexbox.
+    O número 3 significa que a tag section ocupará mais espaço em relação
+    aos outros elementos flexíveis (elementos dentro do flexbox).
+    Por exemplo: se section possui flex 3 e aside possui flex 1, o espaço será dividido dessa forma:
+    section = 75% e aside = 25%.
+    */
+
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+aside {
+    flex: 1;
+    background-color: #b0c9e2;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+article {
+    margin-bottom: 20px;   /* espaçamento na base do artigo */
+}
+
+footer {
+    background-color: #212529;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+h2 {
+    color: #0d6efd;
+}
