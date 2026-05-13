@@ -1,0 +1,23 @@
+body{
+    font-family: arial;
+    background-color: #fff;
+    color: #000;
+    transition: 0.5s;
+    text-align: center;
+    padding-top: 100px;
+}
+
+button{
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+}
+
+.dark {
+    background-color: #121212;
+    color: #fff;
+}
